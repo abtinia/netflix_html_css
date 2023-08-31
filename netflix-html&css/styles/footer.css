@@ -1,0 +1,87 @@
+.footer {
+  width: 100%;
+  height: 50rem;
+  margin: auto;
+  position: relative;
+}
+
+.footer_divider {
+  width: 100%;
+  height: 0.5rem;
+  position: absolute;
+  bottom: -0.5rem;
+  background-color: gray;
+  left: 0;
+  top: 0;
+  display: block;
+}
+
+.grid_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0.8rem;
+  background-color: transparent;
+  padding: 10rem;
+}
+
+.grid_container > div {
+  text-decoration: underline;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.language {
+  background-color: rgba(31, 28, 28, 0.8);
+  color: white;
+  border: none;
+  border-radius: 0.2rem;
+  height: 1.9rem;
+  width: 8rem;
+  cursor: pointer;
+  margin-left: 10rem;
+  position: relative;
+  bottom: 15rem;
+  font-size: 1rem;
+  border: 1px solid gray;
+  bottom: 7rem;
+  padding-right: 2.1rem;
+  padding-left: 1.7rem;
+  padding-top: 0.2rem;
+  padding-bottom: 0.3rem;
+}
+
+.globe {
+  position: absolute;
+  left: 0.8rem;
+  top: 0.4rem;
+  bottom: 0.3rem;
+}
+
+.select_bar {
+  position: absolute;
+  right: 0.5rem;
+  top: 0.4rem;
+}
+
+.footer_note {
+  position: absolute;
+  bottom: 14rem;
+  left: 10rem;
+}
+
+.footer_note > div {
+  font-size: 1rem;
+}
+
+@media (max-width: 850px) {
+  .grid_container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (max-width: 950px) {
+  .footer_note {
+    display: none;
+  }
+}
